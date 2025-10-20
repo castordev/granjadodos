@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+header  {
+  background-color: #8cc966;
+  text-align: center;
+  padding: 20px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
