@@ -5,36 +5,41 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(226, 245, 218);
 }
 
-header  {
-  background-color: #cdf5b4;
-  text-align: center;
-  padding: 20px;
+
+.menu ul a:hover{
+  color: rgb(118, 145, 58)
+  
 }
 
 .menu ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
-.menu li {
-  list-style: none;
+.logo {
+   
+    text-align: center; /* Centra horizontalmente su contenido */
+    margin: 20px 0;     /* Espacio arriba y abajo */
+
 }
 
-.logo img {
- 
-  width: 300px;
-  height: auto;
-  justify-content: center;
+
+.cuadrado:hover {
+    background-color: rgb(198, 206, 96); /* Nuevo color al pasar el ratón */
+    cursor: pointer; /* cambia el cursor al pasar por encima */
 }
+
 
 .cuadrado {
-  
 
+  margin-top: 30px;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   width: 100px;        
@@ -43,7 +48,7 @@ header  {
   color: rgb(205, 214, 153);      
   text-decoration: none;  
   font-weight: bold;
-
+   transition: background-color 0.3s, color 0.3s;
 }
 
 
