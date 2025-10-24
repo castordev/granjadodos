@@ -10,15 +10,15 @@
 
 
 .menu ul a:hover{
-  color: rgb(118, 145, 58)
+    color: rgb(118, 145, 58)
   
 }
 
 .menu ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 .logo {
@@ -30,25 +30,25 @@
 
 
 .cuadrado:hover {
-    background-color: rgb(198, 206, 96); /* Nuevo color al pasar el ratón */
-    cursor: pointer; /* cambia el cursor al pasar por encima */
+    background-color: rgb(198, 206, 96);    /* Nuevo color al pasar el ratón */
+    cursor: pointer;                          /* cambia el cursor al pasar por encima */
 }
 
 
 .cuadrado {
 
-  margin-top: 30px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 100px;        
-  height: 40px;        
-  background-color: #4b5f25;  
-  color: rgb(205, 214, 153);      
-  text-decoration: none;  
-  font-weight: bold;
-   transition: background-color 0.3s, color 0.3s;
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100px;        
+    height: 40px;        
+    background-color: #4b5f25;  
+    color: rgb(205, 214, 153);      
+    text-decoration: none;  
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 
@@ -62,7 +62,6 @@
     color: white;
     text-align: center;
     padding: 80px 0;
-    font-family: 'Montserrat', sans-serif;
     position: relative;
 }
 
@@ -78,4 +77,18 @@
     position: relative; 
     font-size: 50px;
     letter-spacing: 3px;
+}
+
+.article {
+    text-align: justify;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 500px;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.fuerte {
+    font-size: larger;
+    
 }
