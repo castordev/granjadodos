@@ -1,5 +1,4 @@
 * {
-    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,10 +7,13 @@
     background-color: rgb(226, 245, 218);
 }
 
+body{
+    margin: 0;
+}
 
+/* menu */
 .menu ul a:hover{
-    color: rgb(118, 145, 58)
-  
+    color: rgb(118, 145, 58)  
 }
 
 .menu ul {
@@ -21,22 +23,18 @@
     gap: 15px;
 }
 
-.logo {
-   
+.logo { 
     text-align: center; /* Centra horizontalmente su contenido */
     margin: 20px 0;     /* Espacio arriba y abajo */
-
 }
 
-
+/* botones */
 .cuadrado:hover {
     background-color: rgb(198, 206, 96);    /* Nuevo color al pasar el ratón */
     cursor: pointer;                          /* cambia el cursor al pasar por encima */
 }
 
-
 .cuadrado {
-
     margin-top: 30px;
     display: flex;
     text-align: center;
@@ -66,23 +64,66 @@
 }
 
 
-
 .header h1 {
     position: relative; 
     font-size: 50px;
     letter-spacing: 3px;
 }
 
+main{
+     display: flex;
+    flex-direction: column;
+    align-items: center;      /* Centra horizontalmente */
+    justify-content: center;  
+    padding: 0 10%;           /* Sangrado lateral */
+    box-sizing: border-box;
+}
+
 .article {
-    text-align: justify;
-    padding-top: 100px;
-    display: grid;
-    grid-template-columns: 500px;
-    justify-content: space-evenly;
+    display: flex;
+    align-items: center;    
+    justify-content: center; 
     font-weight: bold;
 }
 
+.texto.somos {
+    max-width: 600px;
+    text-align: center;
+}
+
+
 .fuerte {
-    font-size: larger;
-    
+    font-size: larger;    
+}
+
+
+.gif-i{
+    width: 200px;  
+    height: auto;
+    margin: 0 20px;  /* margen para separar del texto */
+}
+
+
+.gif-d{
+    width: 200px;  
+    height: auto;
+    margin: 0 20px;  
+}
+
+
+
+/* === RESPONSIVE: para pantallas pequeñas === */
+@media (max-width: 700px) {
+    .article {
+        flex-direction: column; /* GIFs arriba/abajo del texto */
+    }
+
+    main {
+        padding: 0 5%; /* menos sangrado en móvil */
+    }
+
+    .gif-i, .gif-d {
+        width: 150px;
+        margin: 10px 0;
+    }
 }
